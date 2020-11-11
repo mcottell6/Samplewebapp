@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>add things</title>
+    <link href = "/static/style.css" rel = "stylesheet">
+  </head>
+  <body class = "fun2">
+    <h2>hello please add things to our database</h2>
+    <form action = '/thanks' method = 'post'>
+      <table style = "font-size: 30px; padding: 20px">
+        <tr>
+          <td><label for = 'thingtype'>type of thing:   </label></td>
+          <td  style = "padding:10px"><input type = 'text' id = 'thingtype' name = 'thing'
+            style = "font-size: 30px; font-family: 'Comic Sans MS'" placeholder= 'cows' required
+            oninvalid = "this.setCustomValidity('please enter a thing')"
+            oninput = "this.setCustomValidity('')"></td>
+        </tr>
+        <tr>
+          <td><label for = 'thingno'>number of things:   </label></td>
+          <td  style = "padding:10px"><input type = 'number' id = 'thingno' name = 'thno' style = "font-size: 30px; font-family: 'Comic Sans MS'" placeholder = '1'></td>
+      </table>
+      <input type = 'submit' value = 'add things' class = "button"><br><br>
+    <a href = "/" class = "button">go home </a>
+    </form>
+  </body>
+</html>

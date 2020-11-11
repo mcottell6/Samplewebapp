@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <title>list of things</title>
+    <link href = "/static/style.css" rel = "stylesheet">
+  </head>
+  <style>
+  th {
+    text-align: left;
+  }
+  table, th, td {
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 5px;
+  }
+
+  button {
+    height:30px;
+    width:140px;
+  }
+
+  </style>
+  <body class = "fun4">
+    <h2> hello look at all the nice things we have </h2>
+    <table style = "padding:5px; background-color: GhostWhite; border:4px solid indigo">
+      <tr style = "border-bottom:3px solid indigo">
+        <th> id </th>
+        <th> thing </th>
+        <th> how many </th>
+      </tr>
+      {% for i in db %}
+      <tr style = "padding: 5px; border-top:2px solid indigo; border-bottom:2px solid indigo">
+          <td> {{ i[0] }} </td>
+          <td> {{ i[1] }} </td>
+          <td> {{ i[2] }} </td>
+      </tr>
+      {% endfor %}
+    </table>
+    <h4>sort the table:</h4>
+    <form action="/listthings" method="post">
+      <table style= "border-collapse: separate">
+        <tr>
+          <td><button type="submit" class= "buttonsmall" value = "idasc" name = "sort"> id ascending </button></td>
+          <td><button type="submit" class= "buttonsmall" value = "iddsc" name = "sort"> id descending </button></td>
+        </tr>
+        <tr>
+          <td><button type="submit" class= "buttonsmall" value = "thasc" name = "sort"> thing ascending </button></td>
+          <td><button type="submit" class= "buttonsmall" value = "thdsc" name = "sort"> thing descending </button></td>
+        </tr>
+        <tr>
+          <td><button type="submit" class= "buttonsmall" value = "noasc" name = "sort"> count ascending </button></td>
+          <td><button type="submit" class= "buttonsmall" value = "nodsc" name = "sort"> count descending </button></td>
+        </tr>
+      </table>
+    </form><br>
+    <a href = "/addthings" class = "button"> add things </a><br><br>
+    <a href = "/" class = "button">go home </a>
+  </body>
+</html>

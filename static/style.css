@@ -1,0 +1,55 @@
+.fun {
+  font-family: "Comic Sans MS";
+  font-size: 30px;
+  background-color: yellow;
+  color: MidnightBlue;
+}
+
+.fun2 {
+  font-family: "Comic Sans MS";
+  font-size: 28px;
+  background-color: LightSalmon;
+  color: DarkGreen;
+}
+
+.fun3 {
+  font-family: "Comic Sans MS";
+  font-size: 28px;
+  background-color: PaleGreen;
+  color: Maroon;
+}
+
+.fun4 {
+  font-family: "Comic Sans MS";
+  font-size: 28px;
+  background-color: LightSkyBlue;
+  color: Indigo;
+}
+
+.button {
+  font-family: "Comic Sans MS";
+  font-size: 30px;
+  background-color: LightSteelBlue;
+  color: MediumBlue;
+  padding: 5px 10px 10px 10px;
+  border-top: 3px solid Grey;
+  border-right: 4px solid DimGrey;
+  border-bottom: 4px solid DimGrey;
+  border-left: 3px solid Grey;
+  text-decoration: none;
+  text-align: center;
+}
+
+.buttonsmall {
+  font-family: "Comic Sans MS";
+  font-size: 15px;
+  background-color: LightSteelBlue;
+  color: MediumBlue;
+  padding: 2px 4px 4px 4px;
+  border-top: 1px solid Grey;
+  border-right: 2px solid DimGrey;
+  border-bottom: 2px solid DimGrey;
+  border-left: 1px solid Grey;
+  text-decoration: none;
+  text-align: center;
+}
